@@ -6,8 +6,6 @@
 body{
     background-color:#dddddd;
     color: rgba(0, 0, 0, 1);
-    
-    
 }
 
 p{
@@ -46,6 +44,42 @@ footer#rodape p{
     text-align: center;
 }
 
+table#tabelaspec{
+    border: 1px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspec td.colunaleft{
+    text-align: right;
+    color: white;
+    background-color: #606060;
+}
+
+table#tabelaspec td.colunarigth{
+    text-align:left;
+    
+}
+
+table#tabelaspec caption{
+    font-size: 13pt;
+    color: #808080;
+    font-family: cursive;
+}
+
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
 
 /*Formatação o icone oculos*/
 
