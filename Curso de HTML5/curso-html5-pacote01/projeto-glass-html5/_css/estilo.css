@@ -26,6 +26,7 @@ section#corpo{
     float: left;
     border-right: 1px solid black ;
     padding-right: 10px;
+    margin-left: 5px;
 }
 
 aside#lateral{
@@ -81,6 +82,44 @@ table#tabelaspec caption span{
     margin-top: 10px;
 }
 
+article#artigo_1 h2{
+    font-size: 12pt;
+    color: #808080;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 5px;
+}
+
+section article header#cabecalho-art-1 h1{
+    font-family: 'fonte-logo', sans-serif, arial;
+    font-size: 20pt;
+    color: #808080 ;
+}
+
+section article header#cabecalho-art-1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color:#808080;
+    margin-left: 5px;
+}
+section article header#cabecalho-art-1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    color: black;
+    margin-left: 15px;
+}
+
+aside#lateral h1{
+    font-family: 'fonte-logo', sans-serif, arial;
+    color: #808080;
+}
+
+aside#lateral h2{
+    background-color: #808080;
+    color: white;
+    padding: 5px;
+    font-size: 13pt;
+}
 /*Formatação o icone oculos*/
 
 header#cabecalho img#icone{
