@@ -5,41 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lâmpada</title>
-
     <script>
         var quebrada = false;
         function mudaLampada(tipo) {
-            switch (tipo) {
-                case 1: {
-                    arquivo = "_imagens/lampada-acesa.jpg"
-                }
-                case 2: {
-                    arquivo = "_imagens/lampada-apagada"
-                }
-                case 3: {
-                    arquivo = "_imagens/lampada-quebrada"  
-                }
-                    
+            if (tipo == 1) {
+                arquivo = "_imagens/lampada-acesa.jpg";
             }
-                if(!quebrada){
-                    document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";
-                    if(tipo==3){
-                        quebrada=true;
-                    }
+            if (tipo == 2) {
+                arquivo = "_imagens/lampada-apagada.jpg";
+            }
+            if (tipo == 3) {
+                arquivo = "_imagens/lampada-quebrada.jpg";
+            }
+
+            if (!quebrada) {
+                document.getElementById("luz").src = arquivo;
+                if (tipo == 3) {
+                    quebrada = true;
                 }
-                
+            }
 
         }
+
+
     </script>
 
 </head>
 
 <body>
-    <h1>Acenda a lâmpada</h1>
+    <h1>Projeto acende Lâmpada</h1>
     <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)"
-        onclick="mudaLampada(3)" />
-
-
+        onclick="mudaLampada(3)">
 </body>
 
 </html>
