@@ -223,3 +223,16 @@ nav#menu a:hover{
     color: white;
 }
 
+video#index_video-01{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: 5px;
+}
+
+video#index_video-02{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    margin-top: -20px;
+}
