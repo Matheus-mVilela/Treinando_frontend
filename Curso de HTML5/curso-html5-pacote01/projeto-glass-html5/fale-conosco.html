@@ -75,18 +75,31 @@
                         <p><label for="cnum"> Número:</label> <input type="number" name="tnum" id="cnum" size="10"
                                 min="0" max="99999"> </p>
                         <p><label for="cest">Estado:</label><select name="test" id="cest">
-                            <option value="">Rio de Janeiro</option>
-                            <option value="">São Paulo</option>
+                                <optgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </optgroup>
+                            </select> </p>
 
-                        </select> </p>
-                        <p>Cidade:</p>
+                        <p><label for="ccidade">Cidade:</label><input type="text" name="tcidade" id="ccidade" maxlength="40" size="20" placeholder="" list="cidade"> </p>
+                        <datalist id="cidade">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belford Roxo"></option>
+                        </datalist>
                     </fieldset>
-
 
                     <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
-                        Grau de Urgência:
-                        Mensagem:
+                       <p><label for="curg">Grau de Urgência:</label>Min<input type="range" name="turg" id="curg" min="0" max="10" step="1">Máx</p> 
+                       <p><label for="cmsg">Mensagem:</label><textarea name="tmsg" id="cmsg" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea> </p> 
                     </fieldset>
 
 
