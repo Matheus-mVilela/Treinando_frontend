@@ -22,55 +22,83 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ol>
-                    <li onmouseover="mudaFoto('_imagens/home.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="index.html">Home</a></li>
                     <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a
-                            href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a
-                            href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html"> Fale
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="fale-conosco.html"> Fale
                             conosco</a></li>
                 </ol>
             </nav>
         </header>
 
-        Fale Conosco > Contato
-        Formulário de Contato
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
-
-        Identificação do Usuário
-        Nome:
-        Senha:
-        E-mail:
-        Sexo:
-        - Masculino
-        - Feminino
-        Data de Nascimento:
-
-        Endereço do Usuário
-        Logradouro:
-        Número:
-        Estado:
-        Cidade:
-
-        Mensagem do Usuário
-        Grau de Urgência:
-        Mensagem:
-
-        Quero um Google Glass
-        Gostaria de adquirir um Google Glass quando disponível
-        Cor:
-        Quantidade:
-        Preço Total: R$
+        <section id="corpo-faleconosco">
+            <article id="artigo_1">
+                <header id="cabecalho-art-1">
+                    <hgrup>
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>POR. Matheus Vilela</h2>
+                        <h3>Atualizado em 23/Abril/2013</h3>
+                    </hgrup>
+                </header>
 
 
-        [BOTÃO ENVIAR]
+                <form>
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="50"
+                                placeholder="Nome completo"> </p>
+                        <p><label for="csenha">Senha:</label>  <input type="password" name="tsenha" id="csenha" size="8" maxlength="8"
+                                placeholder="Oito Digitos"> </p>
+                        <p><label for="cmail">E-mail:</label>  <input type="e-mail" name="tmail" id="cmail" size="20" maxlength="50" placeholder="Digite seu e-mail"></p>
+
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="tsexo" id="cmas"> <label for="cmas">Masculino</label> 
+                            <input type="radio" name="tsexo" id="cfem"> <label for="cfem">Feminino</label>  
+                        </fieldset>
+
+                           <p>Data de Nascimento: <input type="date" name="tdate" id="cdate"></p> 
+                    </fieldset>
+
+                    <fieldset id="endereco">
+                        <legend>Endereço do Usuário</legend>
+                        Logradouro:
+                        Número:
+                        Estado:
+                        Cidade:
+                    </fieldset>
+
+
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        Grau de Urgência:
+                        Mensagem:
+                    </fieldset>
+
+
+                    <fieldset id="produto">
+                        <legend>Quero um Google Glass</legend>
+                        Gostaria de adquirir um Google Glass quando disponível
+                        Cor:
+                        Quantidade:
+                        Preço Total: R$
+                    </fieldset>
+
+
+
+
+                    [BOTÃO ENVIAR]
+                </form>
+
+            </article>
+        </section>
 
         <footer id="rodape">
             <p> Copyright &copy; 2013 - by Matheus Vilela <br>
