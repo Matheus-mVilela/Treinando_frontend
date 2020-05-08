@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
 </head>
 <script lang="javascript" src="_javascript/funcoes.js"></script>
+
 
 <body>
     <div id="interface">
@@ -49,7 +51,7 @@
                 </header>
 
 
-                <form method="POST" id="fcontato" action="mailto:matheusvao15@gmail.com">
+                <form method="POST" id="fcontato" action="mailto:matheusvao15@gmail.com" oninput="calc_total();">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
                         <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="20"
@@ -87,7 +89,8 @@
                                 </optgroup>
                             </select> </p>
 
-                        <p><label for="ccidade">Cidade:</label><input type="text" name="tcidade" id="ccidade" maxlength="40" size="20" placeholder="" list="cidade"> </p>
+                        <p><label for="ccidade">Cidade:</label><input type="text" name="tcidade" id="ccidade"
+                                maxlength="40" size="20" placeholder="" list="cidade"> </p>
                         <datalist id="cidade">
                             <option value="Rio de Janeiro"></option>
                             <option value="Nova Iguaçu"></option>
@@ -98,23 +101,26 @@
 
                     <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
-                       <p><label for="curg">Grau de Urgência:</label>Min<input type="range" name="turg" id="curg" min="0" max="10" step="1">Máx</p> 
-                       <p><label for="cmsg">Mensagem:</label><textarea name="tmsg" id="cmsg" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea> </p> 
+                        <p><label for="curg">Grau de Urgência:</label>Min<input type="range" name="turg" id="curg"
+                                min="0" max="10" step="1">Máx</p>
+                        <p><label for="cmsg">Mensagem:</label><br><textarea name="tmsg" id="cmsg" cols="30" rows="10"
+                                placeholder="Deixe sua mensagem"></textarea> </p>
                     </fieldset>
 
 
                     <fieldset id="produto">
                         <legend>Quero um Google Glass</legend>
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <p><input type="radio" name="tgoogleglass" id="cgoogleglass" checked><label
+                                for="cgoogleglass">Gostaria de adquirir um Google Glass quando disponível.</label> </p>
+                        <p><label for="ccolor">Cor:</label> <input type="color" name="tcolor" id="ccolor"></p>
+                        <p><label for="cqtd">Quantidade:</label> <input type="number" name="tqtd" id="cqtd" min="0"
+                                max="5" value="0"> </p>
+                        <p><label for="cpreco">Preço Total: R$</label> <input type="text" name="tpreco" id="cpreco"
+                                readonly> </p>
+
+                        <input type="image" src="_imagens/botao-enviar.png">
+                    
                     </fieldset>
-
-
-
-
-                    [BOTÃO ENVIAR]
                 </form>
 
             </article>
